@@ -2,16 +2,22 @@
 <html>
 <head>
 <title> Formulário </title>
-<link rel= "stylesheet" type= "text/css" href="Layout_formulário.css"
+<link rel= "stylesheet" type= "text/css" href="css/Layout_formulário.css">
+<script src="js/ano.js"></script>
 </head>
 <body>
-<h1>Formulario</h1>
+
     <div id="form">
      <form action="">
+	 <h1>Formulario</h1>
 	 Nome:<br><input type= "text" name="nome" value="" size="35"><br>
 	 Sobrenome:<br><input type="text" name="sobrenome" value="" size="35"><br>
 	 Masculino<input type="radio" name="sexo" value="masculino"> Feminino<input type="radio" name= "sexo" value="feminino"><br>
 	 Qual o ano de nascimento ?<br>
+	  <input type="button" id ="btnCarregar" onclick= "ano()" value= "Ano">
+	  <select name="data_nasc" id="data_nasc">
+	  </select><br>
+	 Qual sua data de aniversário ? <br>
 	 <input type="date" name="data_aniversario"><br>
 	 Assinale os itens de maior consumo: <br>
 	 <input type="Checkbox" name="chocolate" value="chocolate"> Chocolate<br>
@@ -20,7 +26,7 @@
 	 <input type="email" name="email" size= "35"><br>
 	 Digite uma mensagem:<br>
 	 <textarea name="menssagem" rows="10" cols="36"></textarea><br><br>
-	 <input type="submit" value="Enviar"
+	 <input type="submit" value="Enviar" >
 	 </form>
 	</div>
 </body>
